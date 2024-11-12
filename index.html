@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打磚塊遊戲</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center vh-100 bg-light">
+    <div id="difficultySelection" class="mb-3 text-center">
+        <button class="btn btn-primary mx-2" onclick="selectDifficulty('easy')">簡單</button>
+        <button class="btn btn-warning mx-2" onclick="selectDifficulty('medium')">中等</button>
+        <button class="btn btn-danger mx-2" onclick="selectDifficulty('hard')">困難</button>
+    </div>
+    <div class="border" style="max-width: 100%; overflow-x: auto;">
+        <canvas id="gameCanvas" width="480" height="320"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
